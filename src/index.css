@@ -1,0 +1,35 @@
+:root {
+  --c-black-10: oklch(0 0 0);
+  --c-blue-10: oklch(0.735 0.117 236.177);
+  --c-blue-20: oklch(0.532 0.131 244.05);
+  --c-green-10: oklch(0.62 0.13 165.459);
+  --c-orange-10: oklch(0.753 0.158 76.768);
+  --c-orange-20: oklch(0.621 0.17 47.515);
+  --c-pink-10: oklch(0.679 0.118 346.324);
+  --c-yellow-10: oklch(0.902 0.172 105.04);
+
+  --c-gray-1: oklch(0.993 0.002 256);
+  --c-gray-2: oklch(0.982 0.002 256);
+  --c-gray-3: oklch(0.959 0.004 256);
+  --c-gray-4: oklch(0.936 0.006 256);
+  --c-gray-5: oklch(0.914 0.008 256);
+  --c-gray-6: oklch(0.889 0.01 256);
+  --c-gray-7: oklch(0.859 0.012 256);
+  --c-gray-8: oklch(0.811 0.016 256);
+  --c-gray-9: oklch(0.645 0.018 256);
+  --c-gray-10: oklch(0.601 0.02 256);
+  --c-gray-11: oklch(0.501 0.018 256);
+  --c-gray-12: oklch(0.378 0.016 256);
+}
+
+html,
+body {
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  height: 100vh;
+  font-size: 14px;
+  background-color: var(--c-gray-3);
+}
+
+#root {
+  height: 100%;
+}
