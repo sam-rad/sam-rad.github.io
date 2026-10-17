@@ -13,6 +13,10 @@ jobs:
   build_job:
     runs-on: ubuntu-latest
     steps:
+      - uses: pnpm/setup@v3
+        with:
+          version: 11
+          node-version: 22
       - name: Build static files
         id: build
         run: |
