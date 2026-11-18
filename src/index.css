@@ -20,6 +20,8 @@
   --c-gray-10: oklch(0.601 0.02 256);
   --c-gray-11: oklch(0.501 0.018 256);
   --c-gray-12: oklch(0.378 0.016 256);
+
+  --c-gray-paper: #e6e6e6;
 }
 
 html,
@@ -27,9 +29,22 @@ body {
   font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
   height: 100vh;
   font-size: 14px;
-  background-color: var(--c-gray-3);
+  background-color: var(--c-gray-paper);
 }
 
 #root {
   height: 100%;
+}
+
+a,
+a:visited {
+  color: var(--c-gray-11);
+  padding: 0px 2px;
+}
+
+a:focus,
+a:hover {
+  background-color: var(--c-gray-2);
+  border-radius: 4px;
+  /* padding: 0px 2px; */
 }
