@@ -26,7 +26,9 @@
 
 html,
 body {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-family:
+    sans-serif, ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  color: var(--c-gray-12);
   height: 100vh;
   font-size: 14px;
   background-color: var(--c-gray-paper);
@@ -47,4 +49,8 @@ a:hover {
   background-color: var(--c-gray-2);
   border-radius: 4px;
   /* padding: 0px 2px; */
+}
+
+code {
+  font-family: monospace;
 }

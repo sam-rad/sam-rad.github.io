@@ -44,10 +44,36 @@
           transform: translate(-239px, -338px) scale(1.1);
         }
 
-        .cloud_b_part_1 {fill: #9d9d9d; }
-        .cloud_b_part_2 {fill: #ffffff; }
-        .cloud_b_part_3 {fill: #d9d9d9; }
-        .cloud_b_part_4 {fill: #606060; }
+        .cloud_b [class^="cloud_b_part_"] {
+          animation: glow 10s linear alternate-reverse;
+          animation-iteration-count: infinite;
+        }
+
+        .cloud_b_part_1 { 
+          --from-color: #9d9d9d;
+          --to-color: #9d9d9d;
+        }
+        .cloud_b_part_2 { 
+          --from-color: #ffffff;  
+          --to-color: #ffffff; 
+        }
+        .cloud_b_part_3 { 
+          --from-color: #d9d9d9;  
+          --to-color: #d9d9d9; 
+        }
+        .cloud_b_part_4 { 
+          --from-color: #606060; 
+          --to-color: rgba(255, 217, 0, 0.261);
+        }
+
+        @keyframes glow {
+          0% {
+            fill: var(--from-color);
+          }
+          100% {
+            fill: var(--to-color);
+          }
+        }
     </style>
     <g>
         <g id="flying_house">
@@ -149,7 +175,7 @@
             <path id="house_part_01" d="M720 351V411" stroke="#969696"/>
         </g>
         <g id="light" opacity="0.54" filter="url(#filter0_f_27_80)" style="mix-blend-mode: multiply">
-          <path d="M681.097 652.772L672.051 650.357L512.506 1003.11L518 1029.5L543 1039.5L574.5 1039.5L602.265 1020.23L681.097 652.772Z"/>
+            <path d="M681.097 652.772L672.051 650.357L512.506 1003.11L518 1029.5L543 1039.5L574.5 1039.5L602.265 1020.23L681.097 652.772Z"/>
         </g>
     </g>
     <defs>

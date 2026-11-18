@@ -2,7 +2,7 @@ import ExternalLink from './ExternalLink';
 import styles from './App.module.css';
 import FlyingHouse from './assets/flying-house.svg?react';
 
-function App() {
+export default function App() {
   return (
     <main className={styles.main}>
       <section>
@@ -24,10 +24,10 @@ function App() {
             Laurent Chehere&apos;s Photography
           </ExternalLink>
         </p>
-        <FlyingHouse />
+        <figure>
+          <FlyingHouse />
+        </figure>
       </section>
     </main>
   );
 }
-
-export default App;
