@@ -1,5 +1,6 @@
 import ExternalLink from './ExternalLink';
 import styles from './App.module.css';
+import FlyingHouse from './assets/flying-house.svg?react';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             Laurent Chehere&apos;s Photography
           </ExternalLink>
         </p>
+        <FlyingHouse />
       </section>
     </main>
   );
